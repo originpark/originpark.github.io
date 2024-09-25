@@ -2,27 +2,62 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  appearance: 'force-dark',
+  lang: 'zh-CN',
+  srcDir: 'src',
   title: "OriginPark",
+  titleTemplate: "OriginPark",
+  head: [['link', {rel: 'icon', href: '/images/logo.ico'}]],
   description: "A VitePress Site",
+  lastUpdated: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/images/logo.png',
+    search: {
+      provider: 'local'
+    },
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      {
+        text: '个人笔记',
+        items: [
+          {
+            text: 'javaSE',
+            link: '/note/javaSE'
+          }
+        ]
+      },
+      { text: 'Examples', link: '/markdown-examples' },
+      
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/note/': [
+        {
+          collapsed: false,
+          
+          text: '个人笔记',
+          items: [
+            {
+              text: 'javaSE',
+              collapsed: true,
+              link: '/note/javaSE',
+              items: [
+                {text: '集合', link: '/note/javaSE/集合'}
+              ]
+            }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/originpark' }
     ]
   }
 })
