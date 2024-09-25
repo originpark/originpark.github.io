@@ -1,8 +1,20 @@
-import { defineConfig } from 'vitepress'
+// import { defineConfig } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid";
+import sidebar from "./sidebar";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  appearance: 'force-dark',
+export default withMermaid({
+  // appearance: 'force-dark',
+  mermaid: {
+  },
+  mermaidPlugin: {
+    class: 'mermaid my-class'
+  },
+  markdown: {
+    image: {
+      lazyLoading: true
+    }
+  },
   lang: 'zh-CN',
   srcDir: 'src',
   title: "OriginPark",
@@ -16,11 +28,14 @@ export default defineConfig({
       provider: 'local'
     },
     lastUpdated: {
-      text: 'Updated at',
+      text: '上次更新于',
       formatOptions: {
         dateStyle: 'full',
         timeStyle: 'medium'
-      }
+      },
+    },
+    outline: {
+      label: '页面导航'
     },
     nav: [
       {
@@ -35,29 +50,13 @@ export default defineConfig({
       { text: 'Examples', link: '/markdown-examples' },
       
     ],
-
-    sidebar: {
-      '/note/': [
-        {
-          collapsed: false,
-          
-          text: '个人笔记',
-          items: [
-            {
-              text: 'javaSE',
-              collapsed: true,
-              link: '/note/javaSE',
-              items: [
-                {text: '集合', link: '/note/javaSE/集合'}
-              ]
-            }
-          ]
-        }
-      ]
-    },
+    sidebar,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/originpark' }
+      { icon: 'github', link: 'https://github.com/originpark' },
+      { icon: 'bilibili', link: 'https://space.bilibili.com/160304257' }
     ]
   }
 })
+
+
