@@ -1,6 +1,7 @@
 // import { defineConfig } from 'vitepress'
 import { withMermaid } from "vitepress-plugin-mermaid";
 import sidebar from "./sidebar";
+import { text } from "stream/consumers";
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
@@ -44,6 +45,10 @@ export default withMermaid({
           {
             text: 'javaSE',
             link: '/note/javaSE'
+          },
+          {
+            text: 'java web基础',
+            link: '/note/java_web_basic'
           }
         ]
       },
