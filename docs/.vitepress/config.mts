@@ -1,7 +1,6 @@
 // import { defineConfig } from 'vitepress'
 import { withMermaid } from "vitepress-plugin-mermaid";
 import sidebar from "./sidebar";
-import { text } from "stream/consumers";
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
