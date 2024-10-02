@@ -14,5 +14,5 @@ title: javaSE
 <img src="./assets/bg.jpg" alt="img" style="zoom:33%; margin-right: 0;" />
 
 ## 集合
-[集合](./集合.md)
+集合就是[集合](./集合.md)
 

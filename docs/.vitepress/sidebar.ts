@@ -1,7 +1,3 @@
-import { link } from "node:fs";
-import test from "node:test";
-import { text } from "stream/consumers";
-
 export default {
     '/note/': [
       {
@@ -18,11 +14,12 @@ export default {
             ]
           },
           {
-            text: 'java web基础',
+            text: 'java web',
             link: '/note/java_web_basic',
             collapsed: false,
             items: [
-              {text: 'Servlet', link: '/note/java_web_basic/Servlet'}
+              {text: 'Servlet', link: '/note/java_web_basic/Servlet'},
+              {text: 'https', link: '/note/java_web_basic/https'}
             ]
           }
         ]

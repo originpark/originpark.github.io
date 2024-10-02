@@ -47,7 +47,7 @@ export default withMermaid({
             link: '/note/javaSE'
           },
           {
-            text: 'java web基础',
+            text: 'java web',
             link: '/note/java_web_basic'
           }
         ]
