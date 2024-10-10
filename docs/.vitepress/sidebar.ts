@@ -21,6 +21,15 @@ export default {
               {text: 'Servlet', link: '/note/java_web_basic/Servlet'},
               {text: 'https', link: '/note/java_web_basic/https'}
             ]
+          },
+          {
+            text: 'Git',
+            link: '/note/G1thub',
+            collapsed: false,
+            items: [
+              {text: 'git', link: '/note/G1thub/git'},
+              {text: 'github', link: '/note/G1thub/github'}
+            ]
           }
         ]
       }

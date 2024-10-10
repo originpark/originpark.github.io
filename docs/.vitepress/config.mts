@@ -48,10 +48,13 @@ export default withMermaid({
           {
             text: 'java web',
             link: '/note/java_web_basic'
+          },
+          {
+            text: 'git',
+            link: '/note/G1thub'
           }
         ]
-      },
-      { text: 'Examples', link: '/markdown-examples' },
+      }
       
     ],
     sidebar,
