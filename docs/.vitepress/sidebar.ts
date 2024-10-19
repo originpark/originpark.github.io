@@ -10,7 +10,9 @@ export default {
             link: '/note/javaSE',
             collapsed: false,
             items: [
-              {text: '集合', link: '/note/javaSE/集合'}
+              {text: '集合', link: '/note/javaSE/集合'},
+              {text: 'java序列化', link: '/note/javaSE/java序列化'},
+              {text: 'java反射', link: '/note/javaSE/java反射与实践'},
             ]
           },
           {

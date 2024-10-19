@@ -1,5 +1,14 @@
-# hello,git
+---
+title: git
+outline: deep
+---
 
+# hello,git
+> 作者: 小王
+> 
+> 状态: 稳定
+>
+> :v::eyes::v:
 
 
 ## 版本控制工具

@@ -15,3 +15,8 @@ title: javaSE
 ## 集合
 集合就是[集合](./集合.md)
 
+## java序列化
+java序列化就是[java序列化](./java序列化.md)
+
+## java反射
+java反射就是[java反射与实践](./java反射与实践.md)
