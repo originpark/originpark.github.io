@@ -52,6 +52,10 @@ export default withMermaid({
           {
             text: 'git',
             link: '/note/G1thub'
+          },
+          {
+            text: 'semver',
+            link: '/note/semver'
           }
         ]
       }
